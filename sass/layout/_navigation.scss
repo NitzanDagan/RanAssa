@@ -2,7 +2,7 @@
   &_nav {
     top: 0;
     right: 0;
-    position: relative;
+    // position: relative;
   }
 
   &_list {
@@ -29,8 +29,8 @@
   }
 
   &_logo {
-    width: 17rem;
-    height: 17rem;
+    width: 13rem;
+    height: 13rem;
     float: right;
     display: inherit;
     -webkit-shape-outside: circle(50% at 50% 50%);
@@ -145,9 +145,9 @@
 
   &_text {
     position: absolute;
-    top: 7%;
+    top: 13%;
     right: 25%;
-    font-size: 3rem;
+    font-size: 2rem;
     color: black;
     letter-spacing: 0.4rem;
     font-weight: bold;

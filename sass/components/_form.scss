@@ -2,6 +2,10 @@
   &_contant {
     // width: 30%;
     background-color: rgba(white, 0.6);
+    // height: 80%;
+    // overflow: scroll;
+    height: 50vh;
+    clear: both;
   }
 
   &_close {
@@ -26,11 +30,11 @@
 
   &_info {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 3rem;
 
     @include respond(tab-land) {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
     }
 
     @include respond(phone) {
@@ -38,10 +42,8 @@
       letter-spacing: 0.1rem;
     }
 
- 
-
     span {
-      font-size: 5rem;
+      font-size: 4rem;
       letter-spacing: 0.8rem;
 
       @include respond(tab-land) {
@@ -51,7 +53,6 @@
 
       @include respond(phone) {
         font-size: 2rem;
-        
       }
     }
   }
@@ -59,19 +60,17 @@
   &_whatsapp-link {
     &:link,
     &:visited {
-      text-decoration: none;
+      text-decoration: underline;
       color: green;
-
+     
       &:hover {
-        text-decoration: underline;
+        font-weight: 600;
       }
     }
   }
 
   &_group {
-    margin-bottom: 2rem;
-    margin-right: 9rem;
-
+    
     @include respond(phone) {
       margin: 0.5rem 1.5rem;
     }
@@ -98,7 +97,7 @@
   }
 
   &_input {
-    height: 4rem;
+    height: 1.5rem;
     font-size: 2rem;
     font-family: inherit;
     border-radius: 3px;
@@ -142,7 +141,7 @@
     border-radius: 5px;
     border: none;
     padding: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: inherit;
     width: 20%;
     box-shadow: $shadow;

@@ -2,8 +2,7 @@
 *::after,
 *::before {
   margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
+  padding: 0; }
 
 html {
   font-size: 62.5%;
@@ -18,8 +17,6 @@ body {
 
 body {
   font-family: "Amatic SC", cursive;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.6;
   direction: rtl; }
 
@@ -32,7 +29,7 @@ footer {
 
 .massages_contant {
   background-image: linear-gradient(105deg, transparent 0%, transparent 20%, rgba(255, 255, 255, 0.8) 35%), url(../img/massage_page_1.png);
-  width: 70%; }
+  width: 50%; }
 
 .massages_about {
   color: #aa5f0b; }
@@ -59,7 +56,7 @@ footer {
 
 .workouts_contant {
   background-image: linear-gradient(105deg, transparent 0%, transparent 20%, rgba(255, 255, 255, 0.8) 35%), url(../img/workout_page_1.png);
-  width: 70%; }
+  width: 50%; }
 
 .workouts_about {
   color: #176bbe; }
@@ -85,7 +82,9 @@ footer {
   color: #176bbe; }
 
 .form_contant {
-  background-color: rgba(255, 255, 255, 0.6); }
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 50vh;
+  clear: both; }
 
 .form_close:link, .form_close:visited {
   position: absolute;
@@ -103,17 +102,17 @@ footer {
 
 .form_info {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 3rem; }
   @media only screen and (max-width: 75em) {
     .form_info {
-      font-size: 2.5rem; } }
+      font-size: 2.2rem; } }
   @media only screen and (max-width: 37.875em) {
     .form_info {
       font-size: 1.5rem;
       letter-spacing: 0.1rem; } }
   .form_info span {
-    font-size: 5rem;
+    font-size: 4rem;
     letter-spacing: 0.8rem; }
     @media only screen and (max-width: 75em) {
       .form_info span {
@@ -124,17 +123,14 @@ footer {
         font-size: 2rem; } }
 
 .form_whatsapp-link:link, .form_whatsapp-link:visited {
-  text-decoration: none;
+  text-decoration: underline;
   color: green; }
   .form_whatsapp-link:link:hover, .form_whatsapp-link:visited:hover {
-    text-decoration: underline; }
+    font-weight: 600; }
 
-.form_group {
-  margin-bottom: 2rem;
-  margin-right: 9rem; }
-  @media only screen and (max-width: 37.875em) {
-    .form_group {
-      margin: 0.5rem 1.5rem; } }
+@media only screen and (max-width: 37.875em) {
+  .form_group {
+    margin: 0.5rem 1.5rem; } }
 
 .form_container {
   margin: 3rem 5rem;
@@ -153,7 +149,7 @@ footer {
       font-size: 1rem; } }
 
 .form_input {
-  height: 4rem;
+  height: 1.5rem;
   font-size: 2rem;
   font-family: inherit;
   border-radius: 3px;
@@ -190,7 +186,7 @@ footer {
   border-radius: 5px;
   border: none;
   padding: 1rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: inherit;
   width: 20%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
@@ -236,8 +232,7 @@ footer {
 
 .navigation_nav {
   top: 0;
-  right: 0;
-  position: relative; }
+  right: 0; }
 
 .navigation_list {
   display: flex;
@@ -257,8 +252,8 @@ footer {
       margin-left: 0; } }
 
 .navigation_logo {
-  width: 17rem;
-  height: 17rem;
+  width: 13rem;
+  height: 13rem;
   float: right;
   display: inherit;
   -webkit-shape-outside: circle(50% at 50% 50%);
@@ -269,7 +264,7 @@ footer {
   opacity: 0.6; }
   .navigation_logo:hover {
     opacity: 1;
-    transform: scale(1.2); }
+    transform: scale(1.05); }
   @media only screen and (max-width: 49.81em) {
     .navigation_logo {
       width: 12rem;
@@ -326,9 +321,9 @@ footer {
 
 .navigation_text {
   position: absolute;
-  top: 7%;
+  top: 13%;
   right: 25%;
-  font-size: 3rem;
+  font-size: 2rem;
   color: black;
   letter-spacing: 0.4rem;
   font-weight: bold;
@@ -370,9 +365,9 @@ footer {
     align-self: center;
     color: green;
     text-align: center;
-    margin-bottom: 20px; }
+    margin-bottom: 15px; }
     .home_home-text--p-primary {
-      font-size: 10rem; }
+      font-size: 8rem; }
       @media only screen and (max-width: 75em) {
         .home_home-text--p-primary {
           font-size: 9rem; } }
@@ -383,9 +378,9 @@ footer {
         .home_home-text--p-primary {
           font-size: 5rem; } }
     .home_home-text--p-secondary {
-      font-size: 4rem;
-      margin-bottom: 2rem;
-      letter-spacing: 1.5rem; }
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1.3rem; }
       @media only screen and (max-width: 75em) {
         .home_home-text--p-secondary {
           letter-spacing: 1rem; } }
@@ -422,7 +417,8 @@ footer {
   z-index: 5000;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.8s; }
+  transition: all 0.8s;
+  clear: both; }
   .pages:target {
     opacity: 1;
     visibility: visible; }
@@ -448,31 +444,31 @@ footer {
     background-repeat: no-repeat;
     background-position: center; }
   .pages_right {
-    width: 70%;
+    width: 80%;
     float: right;
     display: table-cell;
     padding: 5rem 3rem 0 0; }
     @media only screen and (max-width: 37.875em) {
       .pages_right {
         width: 100%;
-        padding-top: 1rem; } }
+        padding: 2rem 1rem; } }
   .pages_about {
-    font-size: 5rem;
+    font-size: 3.5rem;
     text-align: center;
     font-weight: 700;
     letter-spacing: 0.5rem; }
     @media only screen and (max-width: 75em) {
       .pages_about {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         letter-spacing: 0.1rem; } }
     @media only screen and (max-width: 37.875em) {
       .pages_about {
-        font-size: 1.5rem;
+        font-size: 1rem;
         letter-spacing: 0.1rem; } }
   .pages_types {
     list-style: none;
     column-count: 2;
-    margin: 5rem 3rem;
+    margin: 4rem 3rem;
     vertical-align: middle; }
     @media only screen and (max-width: 37.875em) {
       .pages_types {
@@ -483,7 +479,7 @@ footer {
         .pages_types li {
           margin-bottom: 1rem; } }
     .pages_types span {
-      font-size: 3rem;
+      font-size: 2.5rem;
       padding: 1rem 0.5rem 1rem 5rem;
       margin-right: 1.5rem;
       letter-spacing: 0.4rem;
@@ -498,7 +494,7 @@ footer {
           margin-right: 0; } }
       @media only screen and (max-width: 37.875em) {
         .pages_types span {
-          font-size: 1.4rem;
+          font-size: 0.7rem;
           letter-spacing: 0.1rem;
           padding-right: 0; } }
       .pages_types span:hover {

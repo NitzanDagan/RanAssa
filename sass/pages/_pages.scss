@@ -9,6 +9,7 @@
   visibility: hidden;
   opacity: 0;
   transition: all 0.8s;
+  clear: both;
 
   &:target {
     opacity: 1;
@@ -42,29 +43,29 @@
   }
 
   &_right {
-    width: 70%;
+    width: 80%;
     float: right;
     display: table-cell;
     padding: 5rem 3rem 0 0;
 
     @include respond(phone) {
       width: 100%;
-      padding-top: 1rem;
+      padding: 2rem 1rem;
     }
   }
 
   &_about {
-    font-size: 5rem;
+    font-size: 3.5rem;
     text-align: center;
     font-weight: 700;
     letter-spacing: 0.5rem;
 
     @include respond(tab-land) {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       letter-spacing: 0.1rem;
     }
     @include respond(phone) {
-      font-size: 1.5rem;
+      font-size: 1rem;
       letter-spacing: 0.1rem;
     }
 
@@ -75,7 +76,7 @@
   &_types {
     list-style: none;
     column-count: 2;
-    margin: 5rem 3rem;
+    margin: 4rem 3rem;
     vertical-align: middle;
 
     @include respond(phone) {
@@ -91,7 +92,7 @@
     }
 
     span {
-      font-size: 3rem;
+      font-size: 2.5rem;
       padding: 1rem 0.5rem 1rem 5rem;
       margin-right: 1.5rem;
       letter-spacing: 0.4rem;
@@ -107,7 +108,7 @@
       }
 
       @include respond(phone) {
-        font-size: 1.4rem;
+        font-size: 0.7rem;
         letter-spacing: 0.1rem;
         padding-right: 0;
       }
