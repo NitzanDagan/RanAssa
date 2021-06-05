@@ -1,0 +1,167 @@
+.form {
+  &_contant {
+    // width: 30%;
+    background-color: rgba(white, 0.6);
+  }
+
+  &_close {
+    &:link,
+    &:visited {
+      position: absolute;
+      text-decoration: none;
+      font-size: 6rem;
+      line-height: 1;
+      margin-right: 2rem;
+      color: lightslategrey;
+
+      @include respond(phone) {
+        font-size: 3rem;
+      }
+    }
+
+    &:hover {
+      color: green;
+    }
+  }
+
+  &_info {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+
+    @include respond(tab-land) {
+      font-size: 2.5rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+      letter-spacing: 0.1rem;
+    }
+
+ 
+
+    span {
+      font-size: 5rem;
+      letter-spacing: 0.8rem;
+
+      @include respond(tab-land) {
+        font-size: 3rem;
+        letter-spacing: 0.4rem;
+      }
+
+      @include respond(phone) {
+        font-size: 2rem;
+        
+      }
+    }
+  }
+
+  &_whatsapp-link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: green;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &_group {
+    margin-bottom: 2rem;
+    margin-right: 9rem;
+
+    @include respond(phone) {
+      margin: 0.5rem 1.5rem;
+    }
+  }
+
+  &_container {
+    margin: 3rem 5rem;
+    color: green;
+
+    @include respond(phone) {
+      margin: 1rem 1.5rem;
+    }
+  }
+
+  &_label {
+    font-size: 2rem;
+    display: block;
+    margin-right: 2rem;
+    transition: all 0.3s;
+
+    @include respond(phone) {
+      font-size: 1rem;
+    }
+  }
+
+  &_input {
+    height: 4rem;
+    font-size: 2rem;
+    font-family: inherit;
+    border-radius: 3px;
+    padding: 1.5rem 2rem;
+    background-color: rgba(white, 0.3);
+    border: none;
+    border-bottom: 3px solid transparent;
+    display: block;
+    transition: all 0.3s;
+    width: 80%;
+
+    @include respond(phone) {
+      font-size: 1rem;
+      height: 1rem;
+      width: 50%;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: $shadow;
+      border-bottom: 3px solid green;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid orangered;
+    }
+  }
+
+  &_input:placeholder-shown + &_label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+  &_btns {
+    text-align: center;
+  }
+  &_btn {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 1rem;
+    font-size: 3rem;
+    font-family: inherit;
+    width: 20%;
+    box-shadow: $shadow;
+    cursor: pointer;
+
+    @include respond(phone) {
+      font-size: 1rem;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:first-child {
+      margin-left: 3rem;
+    }
+
+    &:last-child {
+      margin-right: 3rem;
+    }
+  }
+}

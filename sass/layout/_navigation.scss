@@ -1,0 +1,176 @@
+.navigation {
+  &_nav {
+    top: 0;
+    right: 0;
+    position: relative;
+  }
+
+  &_list {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    margin-right: 3rem;
+    margin-top: 3rem;
+  }
+
+  &_item {
+    &:not(:last-child) {
+      margin-left: 15rem;
+
+      @include respond(tab-port) {
+        margin-left: 10rem;
+      }
+
+      @include respond(phone) {
+        margin-bottom: 3rem;
+        margin-left: 0;
+      }
+    }
+  }
+
+  &_logo {
+    width: 17rem;
+    height: 17rem;
+    float: right;
+    display: inherit;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    position: relative;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+
+    @include respond(tab-port) {
+      width: 12rem;
+      height: 12rem;
+    }
+
+    @include respond(phone) {
+      text-align: center;
+      padding-right: 2rem;
+      -webkit-shape-outside: polygon(
+        100% 0%,
+        75% 50%,
+        100% 100%,
+        25% 100%,
+        0% 50%,
+        25% 0%
+      );
+      shape-outside: polygon(
+        100% 0%,
+        75% 50%,
+        100% 100%,
+        25% 100%,
+        0% 50%,
+        25% 0%
+      );
+      -webkit-clip-path: polygon(
+        100% 0%,
+        75% 50%,
+        100% 100%,
+        25% 100%,
+        0% 50%,
+        25% 0%
+      );
+      clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    }
+
+    @include respond(s-phone) {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    &--gym {
+      background-color: lightblue;
+    }
+
+    &--massage {
+      background-color: lightgoldenrodyellow;
+    }
+
+    &--phone {
+      background-color: lightcoral;
+    }
+  }
+
+  &_link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      position: relative;
+    }
+  }
+
+  &_img {
+    height: 100%;
+    transform: translateX(1.8rem) scale(1);
+    backface-visibility: hidden;
+    transition: all 0.5s;
+
+    @include respond(phone) {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    @include respond(s-phone) {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    &--phone {
+      margin-right: 2.5rem;
+      @include respond(s-phone) {
+        margin-right: 1.5rem;
+      }
+    }
+
+    &--massage {
+      margin-right: 2rem;
+      @include respond(s-phone) {
+        margin-right: 1.5rem;
+      }
+    }
+
+    &--gym {
+      @include respond(s-phone) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  &_text {
+    position: absolute;
+    top: 7%;
+    right: 25%;
+    font-size: 3rem;
+    color: black;
+    letter-spacing: 0.4rem;
+    font-weight: bold;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.8s;
+    z-index: 300;
+    backface-visibility: hidden;
+
+    @include respond(phone) {
+      font-size: 2rem;
+      opacity: 1;
+      letter-spacing: 0;
+      top: 60%;
+    }
+
+    @include respond(s-phone) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &_logo:hover &_text {
+    opacity: 1;
+    transform: translateY(200%);
+  }
+}

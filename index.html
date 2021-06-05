@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ran Assa - Personal trainer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+  </head>
+  <body>
+    <main>
+      <div class="home" id="home-page">
+        <div class="home_container">
+        <div class="navigation">
+          <nav class="navigation_nav">
+            <ul class="navigation_list">
+              <li class="navigation_item">
+                <a href="#workouts" class="navigation_link">
+                  <figure class="navigation_logo navigation_logo--gym">
+                    <img
+                      src="img/gym.png"
+                      class="navigation_img navigation_img--gym"
+                    />
+                    <figcaption class="navigation_text">אימונים</figcaption>
+                  </figure></a
+                >
+              </li>
+              <li class="navigation_item">
+                <a href="#massages" class="navigation_link">
+                  <figure class="navigation_logo navigation_logo--massage">
+                    <img
+                      src="img/massage.png"
+                      class="navigation_img navigation_img--massage"
+                    />
+                    <figcaption class="navigation_text">עיסויים</figcaption>
+                  </figure></a
+                >
+              </li>
+              <li class="navigation_item">
+                <a href="#form" class="navigation_link">
+                  <figure class="navigation_logo navigation_logo--phone">
+                    <img
+                      src="img/phone.png"
+                      class="navigation_img navigation_img--phone"
+                    />
+                    <figcaption class="navigation_text">צור קשר</figcaption>
+                  </figure></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+   
+        <div class="home_home-text">
+            <p class="home_home-text--p-primary">רן אסא</p>
+            <p class="home_home-text--p-secondary">
+              מאמן כושר מנוסה <br /> ומעסה רפואי מוסמך    
+            </p>
+            <img src="img/lotus.png"  alt="lotes_logo" class="home_home-text--logo" />           
+        </div>
+      </div>
+      
+      <div class="pages workouts" id="workouts">
+        <div class="pages_contant workouts_contant">
+          <a href="#home-page" class=" workouts_close">&times;</a>
+          <div class="pages_right workouts_right">
+            <p class="pages_about workouts_about">
+              אימוני כושר אישיים או קבוצתיים <br />
+              בפארקי כושר או בבית הלקוח <br />
+            </p>
+            <ul class="pages_types workouts_types">
+              <li><img src="img/gym2.png" /><span>פונקציונאלי</span></li>
+              <li><img src="img/gym2.png" /><span> כוח</span></li>
+              <li><img src="img/gym2.png" /><span>אירובי</span></li>
+              <li><img src="img/gym2.png" /><span>TRX וגומיות</span></li>
+              <li><img src="img/gym2.png" /><span>הגנה עצמית</span></li>
+              <li><img src="img/gym2.png" /><span>עוד משהו</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="pages massages" id="massages">
+        <div class="pages_contant massages_contant">
+          <a href="#home-page" class="massages_close">&times;</a>
+          <div class="pages_right massages_right">
+            <p class="pages_about massages_about">
+              מעסה רפואי מוסמך למגוון סוגי טיפולים<br />
+              <!-- טיפול של 60 / 75 / 90 דקות <br /> -->
+              בקליניקה או בבית הלקוח
+            </p>
+            <ul class="pages_types massages_types">
+              <li><img src="img/massage_1.png" /><span>שוודי</span></li>
+              <li>
+                <img src="img/massage_1.png" /><span> רקמות עמוק</span>
+              </li>
+              <li><img src="img/massage_1.png" /><span>קלאסי</span></li>
+              <li><img src="img/massage_1.png" /><span>משולב </span></li>
+              <li><img src="img/massage_1.png" /><span>כוסות רוח</span></li>
+              <li><img src="img/massage_1.png" /><span>עוד משהו</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="pages form" id="form">
+        <div class="form_contant pages_contant">
+          <a href="#home-page" class="form_close">&times;</a>
+          <form action="mailto:rasta28ran@gmail.com?subject=יצירת קשר לגבי אימון / עיסוי" method="post" class="form_container" enctype="text/plain">
+            <p class="form_info">
+              לפרטים נוספים ותיאומים השאירו פרטים ואחזור אליכם <br>
+               <a href="https://wa.me/972545949755" class="form_whatsapp-link">שלחו הודעה</a>
+              או התקשרו <span>0508508720</span>
+            </p>
+            <div class="form_group">
+              <input type="text" class="form_input" id="name" placeholder="שם מלא" required>
+              <label for="name" class="form_label"> שם מלא</label>
+            </div>
+            <div class="form_group">
+              <input type="email" class="form_input" id="email" placeholder="אימייל" required>
+              <label for="email" class="form_label">אימייל</label>
+            </div>
+            <div class="form_group">
+              <input type="number" class="form_input" id="phone" placeholder="מספר טלפון" required>
+              <label for="phone" class="form_label">מספר טלפון</label>
+            </div>
+
+            <div class="form_group">
+              <input type="text" class="form_input" id="text" placeholder="משהו נוסף">
+              <label for="text" class="form_label">משהו נוסף</label>
+            </div>
+            <div class="form_btns">
+              <button class="form_btn">
+                שלח
+              </button>
+            </div>
+          </form>
+          </div>
+        </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"><div class="row">© Nitzan Dagan</div></footer>
+  </body>
+</html>

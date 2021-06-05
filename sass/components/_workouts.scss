@@ -1,0 +1,50 @@
+.workouts {
+  &_contant {
+    background-image: linear-gradient(
+        105deg,
+        transparent 0%,
+        transparent 20%,
+        rgba(white, 0.8) 35%
+      ),
+      url(../img/workout_page_1.png);
+    width: 70%;
+  }
+
+  &_about {
+    color: (rgb(23, 107, 190));
+  }
+  &_types {
+    span {
+      color: (rgba(19, 134, 163, 0.678));
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        rgba(19, 134, 163, 0.678) 80%
+      );
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  &_close {
+    &:link,
+    &:visited {
+      position: absolute;
+      text-decoration: none;
+      font-size: 6rem;
+      line-height: 1;
+      margin-right: 2rem;
+      color: lightslategrey;
+
+      @include respond(phone) {
+        font-size: 3rem;
+      }
+    }
+    &:hover {
+      color: (rgb(23, 107, 190));
+    }
+  }
+}

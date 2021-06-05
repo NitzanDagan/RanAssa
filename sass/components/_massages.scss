@@ -1,0 +1,52 @@
+.massages {
+  &_contant {
+    background-image: linear-gradient(
+        105deg,
+        transparent 0%,
+        transparent 20%,
+        rgba(white, 0.8) 35%
+      ),
+      url(../img/massage_page_1.png);
+    width: 70%;
+  }
+
+  &_about {
+    color: #aa5f0b;
+  }
+
+  &_types {
+    span {
+      color: #e29232;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        #e29232 80%
+      );
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  &_close {
+    &:link,
+    &:visited {
+      position: absolute;
+      text-decoration: none;
+      font-size: 6rem;
+      line-height: 1;
+      margin-right: 2rem;
+      color: lightslategrey;
+
+      @include respond(phone) {
+        font-size: 3rem;
+      }
+    }
+
+    &:hover {
+      color: #aa5f0b;
+    }
+  }
+}
