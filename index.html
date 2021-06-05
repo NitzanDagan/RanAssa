@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico">
-    
+   
     <link
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
       rel="stylesheet"
@@ -77,10 +76,10 @@
             <ul class="pages_types workouts_types">
               <li><img src="img/gym2.png" /><span>פונקציונאלי</span></li>
               <li><img src="img/gym2.png" /><span> כוח</span></li>
-              <li><img src="img/gym2.png" /><span>אירובי</span></li>
+              <!-- <li><img src="img/gym2.png" /><span>אירובי</span></li> -->
               <li><img src="img/gym2.png" /><span>TRX וגומיות</span></li>
               <li><img src="img/gym2.png" /><span>הגנה עצמית</span></li>
-              <li><img src="img/gym2.png" /><span>עוד משהו</span></li>
+             
             </ul>
           </div>
         </div>
@@ -98,12 +97,11 @@
             <ul class="pages_types massages_types">
               <li><img src="img/massage_1.png" /><span>שוודי</span></li>
               <li>
-                <img src="img/massage_1.png" /><span> רקמות עמוק</span>
-              </li>
+                <img src="img/massage_1.png" /><span> רקמות עמוק</span></li>
               <li><img src="img/massage_1.png" /><span>קלאסי</span></li>
-              <li><img src="img/massage_1.png" /><span>משולב </span></li>
+              <!-- <li><img src="img/massage_1.png" /><span>משולב </span></li> -->
               <li><img src="img/massage_1.png" /><span>כוסות רוח</span></li>
-              <li><img src="img/massage_1.png" /><span>עוד משהו</span></li>
+            
             </ul>
           </div>
         </div>
@@ -115,30 +113,32 @@
           <form action="mailto:rasta28ran@gmail.com?subject=יצירת קשר לגבי אימון / עיסוי" method="post" class="form_container" enctype="text/plain">
             <p class="form_info">
               לפרטים נוספים ותיאומים השאירו פרטים ואחזור אליכם <br>
-               <a href="https://wa.me/972545949755" class="form_whatsapp-link">שלחו הודעה</a>
+               <a href="https://wa.me/972545949755" class="form_whatsapp-link">שלחו וואטסאפ</a>
               או התקשרו <span>0508508720</span>
             </p>
             <div class="form_group">
-              <input type="text" class="form_input" id="name" placeholder="שם מלא" required>
+              <input type="text" class="form_input" id="name" name="name" placeholder="שם מלא" required>
               <label for="name" class="form_label"> שם מלא</label>
             </div>
             <div class="form_group">
-              <input type="email" class="form_input" id="email" placeholder="אימייל" required>
+              <input type="email" class="form_input" id="email" name="email" placeholder="אימייל" required>
               <label for="email" class="form_label">אימייל</label>
             </div>
             <div class="form_group">
-              <input type="number" class="form_input" id="phone" placeholder="מספר טלפון" required>
+              <input type="number" class="form_input" id="phone" name="phone" placeholder="מספר טלפון" required>
               <label for="phone" class="form_label">מספר טלפון</label>
             </div>
 
             <div class="form_group">
-              <input type="text" class="form_input" id="text" placeholder="משהו נוסף">
+              <input type="text" class="form_input" id="text" name="text" placeholder="משהו נוסף"></input>
               <label for="text" class="form_label">משהו נוסף</label>
             </div>
             <div class="form_btns">
               <button class="form_btn">
                 שלח
               </button>
+
+              <input type="reset" class="form_btn" name="reset" value="נקה" />
             </div>
           </form>
           </div>
